@@ -12,7 +12,7 @@
 
         <div id="wrapper">
             <div id="header">
-                <h2>CRM - Customer Relationship Manager</h2>
+                <h2>CRM System</h2>
             </div>
         </div>
 
@@ -35,6 +35,11 @@
                         <c:url var="updateLink" value="/customer/showFormForUpdate">
                             <c:param name="customerId" value="${tempCustomers.id}"/>
                         </c:url>
+
+                        <c:url var="deleteLink" value="/customer/delete">
+                            <c:param name="customerId" value="${tempCustomers.id}"/>
+                        </c:url>
+
                         <tr>
                             <td> ${tempCustomers.firstName} </td>
                             <td> ${tempCustomers.lastName} </td>
@@ -42,6 +47,8 @@
 
                             <td>
                                 <a href="${updateLink}">Update</a>
+                                |
+                                <a href="${deleteLink}" onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
                             </td>
                         </tr>
                     </c:forEach>

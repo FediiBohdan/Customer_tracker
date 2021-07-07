@@ -2,6 +2,7 @@ package ua.fedii.spring_hibernate.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import ua.fedii.spring_hibernate.entity.Customer;
@@ -36,5 +37,13 @@ public class CustomerDAOImpl implements CustomerDAO{
         Customer customer = currentSession.get(Customer.class, theId);
 
         return customer;
+    }
+
+    @Override
+    public void deleteCustomer(int theId) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query query = currentSession.createQuery("DELETE FROM Customer WHERE id=:customerId");
+        query.setParameter("customerId", theId);
+        query.executeUpdate();
     }
 }
