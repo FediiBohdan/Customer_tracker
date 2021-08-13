@@ -28,9 +28,7 @@
 	</bean>
 
 	<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-		<property name="location">
-			<value>classpath:db.properties</value>
-		</property>
+		<property name="location" value="classpath:db.properties"/>
 	</bean>
 
     <!-- Step 1: Define Database DataSource / connection pool -->
