@@ -1,0 +1,17 @@
+# Project exclude paths
+/target/
+.idea/jarRepositories.xml
+customer-tracker.iml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/encodings.xml
+.idea/dataSources/e30ab8ea-a357-4534-b727-8b4dc16d9da7/storage_v2/_src_/database/company.fTynOA/schema/pg_catalog.0S1ZNQ.meta
+.idea/dataSources/e30ab8ea-a357-4534-b727-8b4dc16d9da7/storage_v2/_src_/database/company.fTynOA/schema/public.abK9xQ.meta
+.idea/dataSources/e30ab8ea-a357-4534-b727-8b4dc16d9da7/storage_v2/_src_/database/company.fTynOA/schema/information_schema.FNRwLQ.meta
+.idea/dataSources/e30ab8ea-a357-4534-b727-8b4dc16d9da7/storage_v2/_src_/database/company.fTynOA.meta
+.idea/dataSources/e30ab8ea-a357-4534-b727-8b4dc16d9da7.xml
+.idea/dataSources.xml
+.idea/compiler.xml
+src/main/resources/db.properties
+.idea/dataSources.local.xml
+.idea/workspace.xml
